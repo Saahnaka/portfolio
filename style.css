@@ -45,10 +45,16 @@ nav {
     padding: 1.5rem 2rem;
 }
 
-.logo {
+.logo a {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--accent-color);
+    text-decoration: none; /* Isso tira o sublinhado */
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    filter: brightness(1.2); /* Dá um brilho quando passa o mouse */
 }
 
 .nav-links {
