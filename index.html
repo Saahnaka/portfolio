@@ -1,199 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sara Nakagawa | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-    <nav>
+      <nav>
         <div class="logo">
-            <a href="#">SN.</a>
+          <a href="#">SN.</a>
         </div>
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
 
     <main>
-        <section id="inicio" class="hero slide-left">
-            <div class="hero-content">
-                <h1>Olá, eu sou a <br><span class="highlight">Sara Nakagawa</span></h1>
-                <p class="subtitle">Desenvolvedor Front-End</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn primary">Download CV</a>
-                    <a href="#contato" class="btn secondary">Entrar em contato</a>
-                </div>
+      <section id="inicio" class="hero slide-left">
+        <div class="hero-content">
+          <h1>
+            Olá, eu sou a <br /><span class="highlight">Sara Nakagawa</span>
+          </h1>
+          <p class="subtitle">Desenvolvedora de Software & Banco de Dados</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn primary">Download CV</a>
+            <a href="#contato" class="btn secondary">Entrar em contato</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar">
+          <img src="img/perfil.jpg" alt="Foto de Sara Nakagawa" />
+        </div>
+      </section>
+
+      <section id="sobre" class="about-section slide-left">
+        <h2>Sobre mim</h2>
+        <p class="description centered">
+          Sou estudante de Sistemas de Informação, apaixonada por banco de
+          dados. Atualmente, estou aprofundando meus conhecimentos com cursos e
+          desenvolvendo projetos práticos. Sou uma profissional focada, que
+          adora lógica e estruturação. Busco minha primeira oportunidade para
+          colocar a mão na massa com dados , transformando requisitos de
+          negócios em bases sólidas e seguras.
+        </p>
+      </section>
+
+      <section id="habilidades" class="skills-section slide-left">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+          <!-- Linha 1 -->
+          <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-server"></i>
+            <span>Oracle</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </div>
+
+          <!-- Linha 2 -->
+          <div class="skill-card">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Modelagem de Dados</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>Dashboards & BI</span>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Front-end (HTML/CSS)</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projects-section">
+        <h2 class="slide-left">Meus Projetos</h2>
+
+        <div class="projects-container">
+          <!-- Projeto 1: Organizador Pessoal (COM VÍDEO) -->
+          <div class="project-card slide-left">
+            <div class="project-thumb">
+              <video
+                src="img/video-organizador.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px 8px 0 0;
+                "
+              ></video>
             </div>
-            
-            <div class="hero-avatar">
-                <img src="img/perfil.jpg" alt="Foto de Sara Nakagawa">
+            <div class="project-info-brief">
+              <h3>Organizador Pessoal</h3>
+              <button class="ver-mais-btn" id="btn-organizador">
+                Ver mais
+              </button>
             </div>
-        </section>
+          </div>
 
-        <section id="sobre" class="about-section slide-left">
-            <h2>Sobre mim</h2>
-            <p class="description centered">
-                Sou estudante de Sistemas de Informação apaixonada pela arte de transformar problemas em código eficiente. Atualmente, foco meus estudos no ecossistema Python e em modelagem de Bancos de Dados. Busco meu primeiro estágio para aplicar minha capacidade analítica e evoluir tecnicamente em projetos reais.
-            </p>
-        </section>
-
-        <section id="habilidades" class="skills-section slide-left">
-            <h2>Habilidades</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
+          <!-- Projeto 2: Login (COM VÍDEO) -->
+          <div class="project-card slide-left">
+            <div class="project-thumb">
+              <video
+                src="img/202607121754.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px 8px 0 0;
+                "
+              ></video>
             </div>
-        </section>
-
-        <section id="projetos" class="projects-section">
-            <h2 class="slide-left">Meus Projetos</h2>
-            
-            <div class="projects-container">
-                <div class="project-card slide-left">
-                    <div class="project-thumb"></div>
-                    <div class="project-info-brief">
-                        <h3>The Movie Guide</h3>
-                        <button class="ver-mais-btn">Ver mais</button>
-                    </div>
-                </div>
-
-                <div class="project-card slide-left">
-                    <div class="project-thumb"></div>
-                    <div class="project-info-brief">
-                        <h3>Sistema de Estoque</h3>
-                        <button class="ver-mais-btn">Ver mais</button>
-                    </div>
-                </div>
-
-                <div class="project-card slide-left">
-                    <div class="project-thumb"></div>
-                    <div class="project-info-brief">
-                        <h3>Análise de Dados</h3>
-                        <button class="ver-mais-btn">Ver mais</button>
-                    </div>
-                </div>
-
-                <div class="project-card slide-left">
-                    <div class="project-thumb"></div>
-                    <div class="project-info-brief">
-                        <h3>Automação Python</h3>
-                        <button class="ver-mais-btn">Ver mais</button>
-                    </div>
-                </div>
-
-                <div class="project-card slide-left">
-                    <div class="project-thumb"></div>
-                    <div class="project-info-brief">
-                        <h3>API Rest</h3>
-                        <button class="ver-mais-btn">Ver mais</button>
-                    </div>
-                </div>
-
-                <div class="project-card slide-left">
-                    <div class="project-thumb"></div>
-                    <div class="project-info-brief">
-                        <h3>Bot Discord</h3>
-                        <button class="ver-mais-btn">Ver mais</button>
-                    </div>
-                </div>
+            <div class="project-info-brief">
+              <h3>Interface de Login</h3>
+              <button class="ver-mais-btn" id="btn-login">Ver mais</button>
             </div>
+          </div>
 
-            <div class="modal-overlay" id="modal-projeto1">
-                <div class="modal-content">
-                    <button class="modal-close" id="close-modal1">&times;</button>
-                    
-                    <div class="modal-header-title">
-                        <h3>The Movie Guide</h3>
-                    </div>
-
-                    <div class="modal-body">
-                        <div class="modal-img-placeholder">
-                            <span>Sem imagem no momento</span>
-                        </div>
-                        
-                        <div class="modal-text">
-                            <p>O <strong>The Movie Guide</strong> é uma plataforma completa para amantes do cinema. O foco principal é a organização de acervos pessoais e avaliação de produções.</p>
-                            
-                            <ul class="modal-features">
-                                <li>• Autenticação de usuários;</li>
-                                <li>• Filtros avançados por categoria;</li>
-                                <li>• Integração com banco de dados para favoritos;</li>
-                                <li>• Interface responsiva e moderna.</li>
-                            </ul>
-
-                            <span class="modal-date">17 de Março de 2026</span>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <a href="#" class="btn-modal">Acessar projeto</a>
-                        <a href="https://github.com/Saahnaka" target="_blank" class="btn-modal">Repositório</a>
-                        <a href="https://www.linkedin.com/in/saranakagawa" target="_blank" class="btn-modal">LinkedIn</a>
-                    </div>
-                </div>
+          <!-- Projeto 3: Dashboard Olist -->
+          <div class="project-card slide-left">
+            <div class="project-thumb">
+              <video
+                src="img/202607121746.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px 8px 0 0;
+                "
+              ></video>
             </div>
-        </section>
-
-        <section id="contato" class="contact-section slide-left">
-            <h2>Contatos</h2>
-            <div class="contact-grid">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saranakagawa16@gmail.com" target="_blank" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <h3>E-mail</h3>
-                    <p>saranakagawa16@gmail.com</p>
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=5511932877673" target="_blank" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Telefone</h3>
-                    <p>(11) 93287-7673</p>
-                </a>
-
-                <a href="https://www.linkedin.com/in/saranakagawa" target="_blank" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <h3>Linkedin</h3>
-                    <p>@saranakagawa</p>
-                </a>
-
-                <a href="https://github.com/Saahnaka" target="_blank" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <h3>Github</h3>
-                    <p>@Saahnaka</p>
-                </a>
+            <div class="project-info-brief">
+              <h3>Performance Comercial</h3>
+              <button class="ver-mais-btn" id="btn-olist">Ver mais</button>
             </div>
-        </section>
+          </div>
+
+          <!-- Projeto 4: Dashboard Estoque -->
+          <div class="project-card slide-left">
+            <div class="project-thumb">
+              <video
+                src="img/202607121703.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px 8px 0 0;
+                "
+              ></video>
+            </div>
+            <div class="project-info-brief">
+              <h3>Controle de Estoque</h3>
+              <button class="ver-mais-btn" id="btn-estoque">Ver mais</button>
+            </div>
+          </div>
+
+          <!-- Projeto 5: Dashboard Resultados -->
+          <div class="project-card slide-left">
+            <div class="project-thumb">
+              <video
+                src="img/202607121708.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px 8px 0 0;
+                "
+              ></video>
+            </div>
+            <div class="project-info-brief">
+              <h3>Análise de Resultados</h3>
+              <button class="ver-mais-btn" id="btn-resultados">Ver mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAIS DOS PROJETOS (As janelinhas que abrem) -->
+        <!-- Modal 1: Organizador -->
+        <div class="modal-overlay" id="modal-projeto1">
+          <div class="modal-content">
+            <button class="modal-close" id="close-modal1">&times;</button>
+            <div class="modal-header-title">
+              <h3>Organizador Pessoal</h3>
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>
+                  Uma aplicação web moderna desenvolvida para gestão de rotinas
+                  e tarefas diárias, focada na organização de estado e interface
+                  limpa.
+                </p>
+                <ul class="modal-features">
+                  <li>• Construído com Next.js e TypeScript;</li>
+                  <li>• Estilização moderna e utilitária com Tailwind CSS;</li>
+                  <li>• Gerenciamento de estado eficiente.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="LINK_DO_GITHUB_AQUI" target="_blank" class="btn-modal"
+                >Repositório GitHub</a
+              >
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
+                >Post no LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2: Login -->
+        <div class="modal-overlay" id="modal-projeto2">
+          <div class="modal-content">
+            <button class="modal-close" id="close-modal2">&times;</button>
+            <div class="modal-header-title">
+              <h3>Interface de Autenticação</h3>
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>
+                  Página de login responsiva desenvolvida com foco nos
+                  fundamentos de front-end, acessibilidade e experiência do
+                  usuário (UX).
+                </p>
+                <ul class="modal-features">
+                  <li>• Fundamentos sólidos de HTML5 semântico;</li>
+                  <li>• Estilização e animações com CSS3 puro;</li>
+                  <li>
+                    • Layout totalmente responsivo para dispositivos móveis.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="LINK_DO_GITHUB_AQUI" target="_blank" class="btn-modal"
+                >Repositório GitHub</a
+              >
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
+                >Post no LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3: Dash Olist -->
+        <div class="modal-overlay" id="modal-projeto3">
+          <div class="modal-content">
+            <button class="modal-close" id="close-modal3">&times;</button>
+            <div class="modal-header-title">
+              <h3>Dashboard Performance Comercial (Olist)</h3>
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>
+                  Painel gerencial construído para acompanhamento de métricas de
+                  vendas, faturamento por região e evolução mensal.
+                </p>
+                <ul class="modal-features">
+                  <li>• Tratamento visual de dados e métricas;</li>
+                  <li>• Análise de evolução mensal e ticket médio;</li>
+                  <li>
+                    • Foco em clareza da informação para tomada de decisão.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="LINK_DO_GITHUB_AQUI" target="_blank" class="btn-modal"
+                >Repositório GitHub</a
+              >
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
+                >Post no LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 4: Dash Estoque -->
+        <div class="modal-overlay" id="modal-projeto4">
+          <div class="modal-content">
+            <button class="modal-close" id="close-modal4">&times;</button>
+            <div class="modal-header-title">
+              <h3>Dashboard Controle de Estoque</h3>
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>
+                  Ferramenta visual para monitoramento do fluxo de mercadorias,
+                  controlando o histórico de movimentações.
+                </p>
+                <ul class="modal-features">
+                  <li>• Controle visual de entradas, saídas e devoluções;</li>
+                  <li>• Categorização detalhada por tipo de produto;</li>
+                  <li>• Acompanhamento de histórico e saldo acumulado.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="LINK_DO_GITHUB_AQUI" target="_blank" class="btn-modal"
+                >Repositório GitHub</a
+              >
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
+                >Post no LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 5: Dash Resultados -->
+        <div class="modal-overlay" id="modal-projeto5">
+          <div class="modal-content">
+            <button class="modal-close" id="close-modal5">&times;</button>
+            <div class="modal-header-title">
+              <h3>Dashboard Análise de Resultados</h3>
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>
+                  Painel interativo para acompanhamento de metas mensais e
+                  ranqueamento de performance de equipe.
+                </p>
+                <ul class="modal-features">
+                  <li>• Comparativo interativo entre Receita e Lucro;</li>
+                  <li>
+                    • Acompanhamento de Indicadores de Performance (KPIs);
+                  </li>
+                  <li>• Análise de resultados individuais por colaborador.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="LINK_DO_GITHUB_AQUI" target="_blank" class="btn-modal"
+                >Repositório GitHub</a
+              >
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
+                >Post no LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact-section slide-left">
+        <h2>Contatos</h2>
+        <div class="contact-grid">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=saranakagawa16@gmail.com"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h3>E-mail</h3>
+            <p>saranakagawa16@gmail.com</p>
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=5511932877673"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Telefone</h3>
+            <p>(11) 93287-7673</p>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/saranakagawa"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <h3>Linkedin</h3>
+            <p>@saranakagawa</p>
+          </a>
+
+          <a
+            href="https://github.com/Saahnaka"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <h3>Github</h3>
+            <p>@Saahnaka</p>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Sara Nakagawa.</p>
+      <p>&copy; 2026 Sara Nakagawa.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
