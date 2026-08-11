@@ -81,7 +81,6 @@ section {
   max-width: 1120px;
   margin: 0 auto;
   padding: 6rem 2rem 4rem;
-
   scroll-margin-top: 100px;
 }
 
@@ -91,7 +90,7 @@ h2 {
   text-align: center;
 }
 
-/* --- HERO (INÍCIO) --- */
+/* --- HERO --- */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -195,71 +194,48 @@ h2 {
 /* --- HABILIDADES --- */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    170px
-  ); 
-  justify-content: center; 
+  grid-template-columns: repeat(3, 170px);
+  justify-content: center;
   gap: 30px;
   margin: 0 auto;
 }
 
-/* para não quebrar no celular */
-@media (max-width: 650px) {
-  .skills-container {
-    grid-template-columns: repeat(
-      2,
-      170px
-    ); /* Fica com 2 colunas em telas menores */
-  }
-}
-
-@media (max-width: 400px) {
-  .skills-container {
-    grid-template-columns: 1fr; /* Fica com 1 coluna no celular em pé */
-  }
-}
-
-/* O visual do Card */
 .skill-card {
-  background-color: #1e1e24; 
-  border-radius: 12px; 
+  background-color: #1e1e24;
+  border-radius: 12px;
   padding: 30px 20px;
-  width: 170px; 
+  width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 15px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease; /
+    box-shadow 0.3s ease;
 }
 
-/* Efeito ao passar o mouse por cima do card */
 .skill-card:hover {
-  transform: translateY(-8px); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
-  background-color: #25252c; 
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: #25252c;
 }
 
-/* Estilo dos Ícones */
 .skill-card i {
   font-size: 3rem;
-  color: #4a4aff; 
+  color: #4a4aff;
   transition: color 0.3s ease;
 }
 
-/* Estilo do Texto */
 .skill-card span {
   font-size: 0.95rem;
   font-weight: 500;
   color: #e0e0e0;
 }
 
-/* --- PROJETOS  --- */
+/* --- PROJETOS --- */
 .projects-container {
   width: 100%;
   display: grid;
@@ -276,7 +252,9 @@ h2 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -289,13 +267,26 @@ h2 {
   height: 220px;
   overflow: hidden;
   background: #29292d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* vídeos */
 .project-thumb video {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+/* imagem do Catalog Movies Web */
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
 }
 
 .project-info-brief {
@@ -328,26 +319,6 @@ h2 {
 .ver-mais-btn:hover {
   background: #805cff;
   transform: translateY(-2px);
-}
-
-
-/* Tablet */
-@media (max-width: 1000px) {
-  .projects-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-/* Celular */
-@media (max-width: 650px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-
-  .project-thumb {
-    height: 210px;
-  }
 }
 
 /* --- MODAL --- */
@@ -387,17 +358,6 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin: 20px 0;
-}
-
-.modal-img-placeholder {
-  width: 100%;
-  height: 300px;
-  background: #252529;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  color: #555;
 }
 
 .modal-text p {
@@ -508,7 +468,7 @@ h2 {
 }
 
 /* --- RESPONSIVIDADE --- */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -519,27 +479,46 @@ h2 {
     flex-direction: column;
     text-align: center;
   }
+
   .hero-avatar {
     width: 280px;
     height: 280px;
     margin-top: 2rem;
   }
+
   .highlight {
     font-size: 3rem;
   }
+
   .nav-links {
     display: none;
   }
+
   .modal-body {
     grid-template-columns: 1fr;
   }
+
   .modal-content {
     padding: 20px;
   }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 170px);
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-thumb {
+    height: 210px;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-container {
     grid-template-columns: 1fr;
   }
 }

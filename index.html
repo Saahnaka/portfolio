@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Sara Nakagawa | Portfólio</title>
+
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
+
   <body>
     <header>
       <nav>
         <div class="logo">
           <a href="#">SN.</a>
         </div>
+
         <ul class="nav-links">
           <li><a href="#sobre">Sobre mim</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
@@ -26,15 +31,20 @@
     </header>
 
     <main>
+      <!-- INÍCIO -->
       <section id="inicio" class="hero slide-left">
         <div class="hero-content">
           <h1>
-            Olá, eu sou a <br /><span class="highlight">Sara Nakagawa</span>
+            Olá, eu sou a <br />
+            <span class="highlight">Sara Nakagawa</span>
           </h1>
+
           <p class="subtitle">Desenvolvedora de Software & Banco de Dados</p>
+
           <div class="hero-buttons">
             <a href="#" class="btn primary">Download CV</a>
-            <a href="#contato" class="btn secondary">Entrar em contato</a>
+
+            <a href="#contato" class="btn secondary"> Entrar em contato </a>
           </div>
         </div>
 
@@ -43,44 +53,50 @@
         </div>
       </section>
 
+      <!-- SOBRE -->
       <section id="sobre" class="about-section slide-left">
         <h2>Sobre mim</h2>
+
         <p class="description centered">
           Sou estudante de Sistemas de Informação, apaixonada por banco de
           dados. Atualmente, estou aprofundando meus conhecimentos com cursos e
           desenvolvendo projetos práticos. Sou uma profissional focada, que
           adora lógica e estruturação. Busco minha primeira oportunidade para
-          colocar a mão na massa com dados , transformando requisitos de
-          negócios em bases sólidas e seguras.
+          colocar a mão na massa com dados, transformando requisitos de negócios
+          em bases sólidas e seguras.
         </p>
       </section>
 
+      <!-- HABILIDADES -->
       <section id="habilidades" class="skills-section slide-left">
         <h2>Habilidades</h2>
+
         <div class="skills-container">
-          <!-- Linha 1 -->
           <div class="skill-card">
             <i class="fa-solid fa-database"></i>
             <span>SQL</span>
           </div>
+
           <div class="skill-card">
             <i class="fa-solid fa-server"></i>
             <span>Oracle</span>
           </div>
+
           <div class="skill-card">
             <i class="fa-brands fa-python"></i>
             <span>Python</span>
           </div>
 
-          <!-- Linha 2 -->
           <div class="skill-card">
             <i class="fa-solid fa-diagram-project"></i>
             <span>Modelagem de Dados</span>
           </div>
+
           <div class="skill-card">
             <i class="fa-solid fa-chart-column"></i>
             <span>Dashboards & BI</span>
           </div>
+
           <div class="skill-card">
             <i class="fa-solid fa-code"></i>
             <span>Front-end (HTML/CSS)</span>
@@ -88,11 +104,12 @@
         </div>
       </section>
 
+      <!-- PROJETOS -->
       <section id="projetos" class="projects-section">
         <h2 class="slide-left">Meus Projetos</h2>
 
         <div class="projects-container">
-          <!-- Projeto 1: Catalog Movies API -->
+          <!-- PROJETO 1 - API -->
           <div class="project-card slide-left">
             <div class="project-thumb">
               <video
@@ -111,16 +128,10 @@
             </div>
           </div>
 
-          <!-- Projeto 2: Catalog Movies Web -->
+          <!-- PROJETO 2 - WEB -->
           <div class="project-card slide-left">
             <div class="project-thumb">
-              <video
-                src="img/videowebmovies.mp4"
-                autoplay
-                loop
-                muted
-                playsinline
-              ></video>
+              <img src="img/imagemwebmovies.png" alt="Catalog Movies Web" />
             </div>
 
             <div class="project-info-brief">
@@ -130,7 +141,7 @@
             </div>
           </div>
 
-          <!-- Projeto 3: Interface de Login -->
+          <!-- PROJETO 3 - LOGIN -->
           <div class="project-card slide-left">
             <div class="project-thumb">
               <video
@@ -149,7 +160,7 @@
             </div>
           </div>
 
-          <!-- Projeto 4: Performance Comercial -->
+          <!-- PROJETO 4 - PERFORMANCE -->
           <div class="project-card slide-left">
             <div class="project-thumb">
               <video
@@ -168,7 +179,7 @@
             </div>
           </div>
 
-          <!-- Projeto 5: Controle de Estoque -->
+          <!-- PROJETO 5 - ESTOQUE -->
           <div class="project-card slide-left">
             <div class="project-thumb">
               <video
@@ -187,7 +198,7 @@
             </div>
           </div>
 
-          <!-- Projeto 6: Análise de Resultados -->
+          <!-- PROJETO 6 - RESULTADOS -->
           <div class="project-card slide-left">
             <div class="project-thumb">
               <video
@@ -207,50 +218,61 @@
           </div>
         </div>
 
-        <!-- MODAIS DOS PROJETOS (As janelinhas que abrem) -->
-        <!-- Modal 1: Organizador -->
+        <!-- ========================= -->
+        <!-- MODAIS -->
+        <!-- ========================= -->
+
+        <!-- MODAL 1 - API -->
         <div class="modal-overlay" id="modal-projeto1">
           <div class="modal-content">
             <button class="modal-close" id="close-modal1">&times;</button>
+
             <div class="modal-header-title">
               <h3>Catalog Movies API</h3>
             </div>
+
             <div class="modal-body">
               <div class="modal-text">
                 <p>
                   API REST desenvolvida para gerenciamento de um catálogo de
                   filmes, responsável pela organização, consulta e manipulação
-                  dos dados
+                  dos dados.
                 </p>
+
                 <ul class="modal-features">
                   <li>
-                    API REST para gerenciamento e disponibilização de dados de
+                    API REST para gerenciamento e disponibilização dos dados de
                     um catálogo de filmes.
                   </li>
                 </ul>
               </div>
             </div>
+
             <div class="modal-footer">
               <a
                 href="https://github.com/Saahnaka/catalog-movies-api"
                 target="_blank"
                 class="btn-modal"
-                >Repositório GitHub</a
               >
-              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
-                >Post no LinkedIn</a
-              >
+                Repositório GitHub
+              </a>
+
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal">
+                Post no LinkedIn
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Modal 2: Login -->
+        <!-- MODAL 2 - LOGIN -->
         <div class="modal-overlay" id="modal-projeto2">
           <div class="modal-content">
             <button class="modal-close" id="close-modal2">&times;</button>
+
             <div class="modal-header-title">
               <h3>Interface de Autenticação</h3>
             </div>
+
             <div class="modal-body">
               <div class="modal-text">
                 <p>
@@ -258,182 +280,230 @@
                   fundamentos de front-end, acessibilidade e experiência do
                   usuário (UX).
                 </p>
+
                 <ul class="modal-features">
                   <li>• Fundamentos sólidos de HTML5 semântico;</li>
+
                   <li>• Estilização e animações com CSS3 puro;</li>
+
                   <li>
                     • Layout totalmente responsivo para dispositivos móveis.
                   </li>
                 </ul>
               </div>
             </div>
+
             <div class="modal-footer">
               <a
                 href="https://github.com/Saahnaka/Interface-Login-Espacial"
                 target="_blank"
                 class="btn-modal"
-                >Repositório GitHub</a
               >
-              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal"
-                >Post no LinkedIn</a
-              >
+                Repositório GitHub
+              </a>
+
+              <a href="LINK_DO_LINKEDIN_AQUI" target="_blank" class="btn-modal">
+                Post no LinkedIn
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Modal 3: Dash Olist -->
+        <!-- MODAL 3 - PERFORMANCE COMERCIAL -->
         <div class="modal-overlay" id="modal-projeto3">
           <div class="modal-content">
             <button class="modal-close" id="close-modal3">&times;</button>
+
             <div class="modal-header-title">
               <h3>Dashboard Performance Comercial (Olist)</h3>
             </div>
+
             <div class="modal-body">
               <div class="modal-text">
                 <p>
                   Painel gerencial construído para acompanhamento de métricas de
                   vendas, faturamento por região e evolução mensal.
                 </p>
+
                 <ul class="modal-features">
                   <li>• Tratamento visual de dados e métricas;</li>
+
                   <li>• Análise de evolução mensal e ticket médio;</li>
+
                   <li>
                     • Foco em clareza da informação para tomada de decisão.
                   </li>
                 </ul>
               </div>
             </div>
+
             <div class="modal-footer">
               <a
                 href="https://github.com/Saahnaka/DashboardsPerformanceComercial"
                 target="_blank"
                 class="btn-modal"
-                >Repositório GitHub</a
               >
+                Repositório GitHub
+              </a>
+
               <a
-                href="https://www.linkedin.com/posts/saranakagawa_powerbi-anaerlisededados-inteligaeanciadenegaejcios-ugcPost-7483325410483572737-f8S2/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEv835IB5Pq2p5MYf46WBQPP9Hah6ludRlk"
+                href="https://www.linkedin.com/posts/saranakagawa_powerbi-anaerlisededados-inteligaeanciadenegaejcios-ugcPost-7483325410483572737-f8S2/"
                 target="_blank"
                 class="btn-modal"
-                >Post no LinkedIn</a
               >
+                Post no LinkedIn
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Modal 4: Dash Estoque -->
+        <!-- MODAL 4 - CONTROLE DE ESTOQUE -->
         <div class="modal-overlay" id="modal-projeto4">
           <div class="modal-content">
             <button class="modal-close" id="close-modal4">&times;</button>
+
             <div class="modal-header-title">
               <h3>Dashboard Controle de Estoque</h3>
             </div>
+
             <div class="modal-body">
               <div class="modal-text">
                 <p>
                   Ferramenta visual para monitoramento do fluxo de mercadorias,
                   controlando o histórico de movimentações.
                 </p>
+
                 <ul class="modal-features">
                   <li>• Controle visual de entradas, saídas e devoluções;</li>
+
                   <li>• Categorização detalhada por tipo de produto;</li>
+
                   <li>• Acompanhamento de histórico e saldo acumulado.</li>
                 </ul>
               </div>
             </div>
+
             <div class="modal-footer">
               <a
                 href="https://github.com/Saahnaka/Dashboards-Controle-de-Estoque"
                 target="_blank"
                 class="btn-modal"
-                >Repositório GitHub</a
               >
+                Repositório GitHub
+              </a>
+
               <a
-                href="https://www.linkedin.com/posts/saranakagawa_powerbi-anaerlisededados-inteligaeanciadenegaejcios-ugcPost-7483325410483572737-f8S2/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEv835IB5Pq2p5MYf46WBQPP9Hah6ludRlk"
+                href="https://www.linkedin.com/posts/saranakagawa_powerbi-anaerlisededados-inteligaeanciadenegaejcios-ugcPost-7483325410483572737-f8S2/"
                 target="_blank"
                 class="btn-modal"
-                >Post no LinkedIn</a
               >
+                Post no LinkedIn
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Modal 5: Dash Resultados -->
+        <!-- MODAL 5 - ANÁLISE DE RESULTADOS -->
         <div class="modal-overlay" id="modal-projeto5">
           <div class="modal-content">
             <button class="modal-close" id="close-modal5">&times;</button>
+
             <div class="modal-header-title">
               <h3>Dashboard Análise de Resultados</h3>
             </div>
+
             <div class="modal-body">
               <div class="modal-text">
                 <p>
                   Painel interativo para acompanhamento de metas mensais e
                   ranqueamento de performance de equipe.
                 </p>
+
                 <ul class="modal-features">
                   <li>• Comparativo interativo entre Receita e Lucro;</li>
+
                   <li>
                     • Acompanhamento de Indicadores de Performance (KPIs);
                   </li>
+
                   <li>• Análise de resultados individuais por colaborador.</li>
                 </ul>
               </div>
             </div>
+
             <div class="modal-footer">
               <a
                 href="https://github.com/Saahnaka/Dashboards-Analise-de-Resultados"
                 target="_blank"
                 class="btn-modal"
-                >Repositório GitHub</a
               >
+                Repositório GitHub
+              </a>
+
               <a
-                href="https://www.linkedin.com/posts/saranakagawa_powerbi-anaerlisededados-inteligaeanciadenegaejcios-ugcPost-7483325410483572737-f8S2/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEv835IB5Pq2p5MYf46WBQPP9Hah6ludRlk"
+                href="https://www.linkedin.com/posts/saranakagawa_powerbi-anaerlisededados-inteligaeanciadenegaejcios-ugcPost-7483325410483572737-f8S2/"
                 target="_blank"
                 class="btn-modal"
-                >Post no LinkedIn</a
               >
+                Post no LinkedIn
+              </a>
             </div>
           </div>
         </div>
 
+        <!-- MODAL 6 - CATALOG MOVIES WEB -->
         <div class="modal-overlay" id="modal-projeto6">
           <div class="modal-content">
             <button class="modal-close" id="close-modal6">&times;</button>
+
             <div class="modal-header-title">
-              <h3>Dashboard Análise de Resultados</h3>
+              <h3>Catalog Movies Web</h3>
             </div>
+
             <div class="modal-body">
               <div class="modal-text">
                 <p>
-                  Interface web desenvolvida para consumir a API Catalog Movies,
-                  permitindo visualizar e interagir com o catálogo de
+                  Interface web desenvolvida para consumir a Catalog Movies API,
+                  permitindo visualizar e interagir com o catálogo de filmes de
+                  forma simples e intuitiva.
                 </p>
+
                 <ul class="modal-features">
-                  <li>Aplicação web integrada</li>
+                  <li>
+                    Aplicação web integrada à API REST para visualização e
+                    gerenciamento de um catálogo de filmes.
+                  </li>
                 </ul>
               </div>
             </div>
+
             <div class="modal-footer">
               <a
                 href="https://github.com/Saahnaka/catalog-movies-web"
                 target="_blank"
                 class="btn-modal"
-                >Repositório GitHub</a
               >
+                Repositório GitHub
+              </a>
+
               <a
-                href="https://www.linkedin.com/posts/saranakagawa"
+                href="https://www.linkedin.com/in/saranakagawa/"
                 target="_blank"
                 class="btn-modal"
-                >Post no LinkedIn</a
               >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CONTATO -->
       <section id="contato" class="contact-section slide-left">
         <h2>Contatos</h2>
+
         <div class="contact-grid">
+          <!-- EMAIL -->
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=saranakagawa16@gmail.com"
             target="_blank"
@@ -442,10 +512,13 @@
             <div class="contact-icon">
               <i class="fa-regular fa-envelope"></i>
             </div>
+
             <h3>E-mail</h3>
+
             <p>saranakagawa16@gmail.com</p>
           </a>
 
+          <!-- TELEFONE -->
           <a
             href="https://api.whatsapp.com/send?phone=5511932877673"
             target="_blank"
@@ -454,22 +527,28 @@
             <div class="contact-icon">
               <i class="fa-solid fa-phone"></i>
             </div>
+
             <h3>Telefone</h3>
+
             <p>(11) 93287-7673</p>
           </a>
 
+          <!-- LINKEDIN -->
           <a
-            href="https://www.linkedin.com/in/saranakagawa"
+            href="https://www.linkedin.com/in/saranakagawa/"
             target="_blank"
             class="contact-item"
           >
             <div class="contact-icon">
               <i class="fa-brands fa-linkedin-in"></i>
             </div>
-            <h3>Linkedin</h3>
+
+            <h3>LinkedIn</h3>
+
             <p>@saranakagawa</p>
           </a>
 
+          <!-- GITHUB -->
           <a
             href="https://github.com/Saahnaka"
             target="_blank"
@@ -478,7 +557,9 @@
             <div class="contact-icon">
               <i class="fa-brands fa-github"></i>
             </div>
-            <h3>Github</h3>
+
+            <h3>GitHub</h3>
+
             <p>@Saahnaka</p>
           </a>
         </div>
